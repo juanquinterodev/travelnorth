@@ -17,7 +17,7 @@ import java.util.Set;
  * en varios paquetes y un paquete puede incluir varios destinos).
  */
 @Entity
-@Table(name = "destinos")
+@Table(name = "destinos", indexes = @Index(name = "idx_destino_codigo", columnList = "codigo"))
 @Getter
 @Setter
 @NoArgsConstructor
